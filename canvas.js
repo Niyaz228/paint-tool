@@ -38,6 +38,12 @@ function clear_canvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
+function dlCanvas() {
+    var dt = canvas.toDataURL('image/png');
+    dllink.href = dt;
+};
+dlBtn.addEventListener('click', dlCanvas, false);
+
 //event listeners
 canvas.addEventListener('mousedown', startPosition);
 canvas.addEventListener('mousemove', draw);

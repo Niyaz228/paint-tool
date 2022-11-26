@@ -5,6 +5,10 @@
 body {
     margin: 0;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .main-screen {
     font-family: 'Raleway';
@@ -42,7 +46,7 @@ body {
     display: block;
     margin: auto;
 }
-.dl-btn, .clr-btn {
+.dlBtn, .clr-btn {
     font-size: x-small;
     height: 25px;
     color: whitesmoke;
