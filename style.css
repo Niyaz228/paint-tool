@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.main-screen {
+    font-family: 'Raleway';
+    height: 100vh;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-direction: row;
+}
+.left-bar {
+    width: 70px;
+    border-right: 1px gray solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(46, 46, 46);
+}
+.upper-bar {
+    border: 1px gray solid;
+    border-radius: 5px;
+    padding: 7px;
+}
+.colorpicker {
+    width: 27px;
+    height: 27px;
+    padding: 0;
+    border-radius: 30%;
+}
+#width
+{
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+    width: 4px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+.dl-btn, .clr-btn {
+    font-size: x-small;
+    height: 25px;
+    color: whitesmoke;
+    border-radius: 3px;
+    border: none;
+    background-color: royalblue;
+}
+.clr-btn {
+    margin-top: 10px;
+}
+button {
+    cursor: pointer;
+}
+.paint-area {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+.canvas-container {
+    margin: auto;
+}
+#canvas {
+    cursor: crosshair;
+    background: white;
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    border-radius: 10px;
+}
