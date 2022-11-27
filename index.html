@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width", initial-scale=1.0">
-    <title>Document</title>
+    <title>YoPaintTool</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
@@ -14,23 +14,23 @@
         <div class="left-bar">
             <div class="upper-bar">
                 <p style="color: whitesmoke; font-size: x-small;">color:</p>
-                <input type="color" id ="color" class="colorpicker">
+                <input type="color" value="#9135ED" id="color" class="colorpicker">
 
                 <p style="color: whitesmoke; font-size: x-small;">width:</p>
                 <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-                    <input name="flevel" type="range" id="width" min="1" max="35" value="3" orient="vertical"/>
-                    <output style="color: whitesmoke;" for="width" name="level" style="display: block;">3</output>
+                    <input name="flevel" type="range" id="width" min="1" max="35" value="5" orient="vertical"/>
+                    <output style="color: whitesmoke;" for="width" name="level" style="display: block;">5</output>
                 </form>
 
                 <button class="clr-btn" onclick="clear_canvas()">Clear</button>
             </div>
             <div class="lower-bar">
-                <button class="dlBtn" id="dlBtn" onclick="dlCanvas"><a id="dllink" href="#" download>Download</a></button>
+                <button class="dlBtn" id="dlBtn"><a id="dllink" href="#" download>Download</a></button>
             </div>
         </div>
 
         <div class="paint-area">
-            <h1 id="h1">Paint tool(beta, pc only)</h1>
+            <h1 id="h1">Paint tool(beta)</h1>
 
             <div class="canvas-container">
                 <canvas id="canvas"></canvas>

@@ -42,10 +42,10 @@ function dlCanvas() {
     var dt = canvas.toDataURL('image/png');
     dllink.href = dt;
 };
-dlBtn.addEventListener('click', dlCanvas, false);
+dlBtn.addEventListener('click', dlCanvas);
 
 //event listeners
-canvas.addEventListener('mousedown', startPosition);
-canvas.addEventListener('mousemove', draw);
-canvas.addEventListener('mouseup', finishPosition);
-canvas.addEventListener('mouseout', finishPosition);
+canvas.addEventListener('mousedown' || "touchstart", startPosition);
+canvas.addEventListener('mousemove' || "touchmove", draw);
+canvas.addEventListener('mouseup' || "touchcancel", finishPosition);
+canvas.addEventListener('mouseout' || "touchend", finishPosition);
